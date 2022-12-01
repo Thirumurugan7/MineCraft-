@@ -7,15 +7,15 @@ import { FPV } from "./components/FPV";
 import { Cubes } from "./components/Cubes";
 import { TextureSelector } from "./components/TextureSelector";
 import { Menu } from "./components/Menu";
-
+import { ethers } from "ethers";
 function App() {
-  async function connectMetamask() {
-    window.ethereum.enable().then(async (rs) => {
-      setMyAccount(rs[0]);
-      let balance = await web3.current.eth.getBalance(accounts[0]);
-      setBalance(web3.current.utils.fromWei(balance));
-    });
-  }
+  // async function connectMetamask() {
+  //   window.ethereum.enable().then(async (rs) => {
+  //     setMyAccount(rs[0]);
+  //     let balance = await web3.current.eth.getBalance(accounts[0]);
+  //     setBalance(web3.current.utils.fromWei(balance));
+  //   });
+  // }
   return (
     <>
       <Canvas>
